@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name= "viewport" content = "width = deivce-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>Rock Wings Gym</title>
+	<link rel="stylesheet" href= "style.css">
+	<link rel="stylesheet" href= "soc med.css">
+</head>
+<body>
+	<div class = "menu">
+		<ul>	
+			<li><a href="index.html" onclick="toggleMenu();" >Home</a></li>
+			<li><a href="About.html" onclick="toggleMenu();" >About</a></li>
+			<li><a href="Training Plans.html" onclick="toggleMenu();" >Training Plans</a></li>
+			<li><a href="Contact.html" onclick="toggleMenu();" >Contact Us</a></li>
+			<li><a href="Register.html" onclick="toggleMenu();" >Register</a></li>
+		</ul>
+	</div>
+	<section class ="banner">
+		<header>
+		<h3 class = "logo"><img src= "logo.png"></h2>
+		<div class = "toggle" onclick="toggleMenu();"></div>
+		</header>
+		<video src = "background.mp4" muted loop autoplay></video>
+		<div class = "overlay"></div>
+		<div class = "text">
+			<h2> Try hard</h2>
+			<h3> Never give up</h3>
+			<p>Our gym focuses on the strenght, health and improvement of our clients. We have
+			been working since 1999, specially in the area of boxing, which we think it's our speciality.
+			Plenty of actual professional boxers started here, on this little gym in Brooklyn. 
+			We have John Synus, Mario Carrillo, Skavinski Laret, and more. Come and pass by, I assure you
+			that you will see the improvement in no time.</p>
+			<a href= "Register.html">Joins us</a>
+		</div>
+			<ul class = "sci">
+				<li><a href= "#"><img src= "facebook.png"></a></li>
+				<li><a href= "#"><img src= "twitter.png"></a></li>
+				<li><a href= "#"><img src= "instagram.png"></a></li>
+			</ul>
+	</section>
+	<script type = "text/javascript">
+	function toggleMenu(){
+		var menuToggle = document.querySelector('.toggle'); 
+		var banner = document.querySelector('.banner'); 
+		menuToggle.classList.toggle('active');
+		banner.classList.toggle('active');
+	}
+	</script>
+</body>
+</html>
